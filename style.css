@@ -1,0 +1,161 @@
+@import url(//db.onlinewebfonts.com/c/3a025ae92e6446cec24efcb6d29e5bf3?family=Malgun+Gothic);
+
+@font-face {font-family: "Malgun Gothic"; src: url("//db.onlinewebfonts.com/t/3a025ae92e6446cec24efcb6d29e5bf3.eot"); src: url("//db.onlinewebfonts.com/t/3a025ae92e6446cec24efcb6d29e5bf3.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3a025ae92e6446cec24efcb6d29e5bf3.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3a025ae92e6446cec24efcb6d29e5bf3.woff") format("woff"), url("//db.onlinewebfonts.com/t/3a025ae92e6446cec24efcb6d29e5bf3.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3a025ae92e6446cec24efcb6d29e5bf3.svg#Malgun Gothic") format("svg"); }
+body {
+
+  background-color: #F0CCA8;
+  --height: 75px;
+  --width: 75px;
+  --border-radius: 37px;
+  font-family: 'Malgun Gothic', Arial;
+  font-size: 25px;
+  /*font: 400 25px 'Poppins', sans-serif;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*#feb236
+
+HEX: #d64161
+
+HEX: #ff7b25*/
+
+}
+h2{
+  color: #ff7b25;
+}
+
+*:focus {
+    outline: none;
+}
+.bigBtn:active{
+  background-color: #d64161;
+  color: #feb236;
+}
+
+.bigBtn:active .newListBtn::after, .bigBtn:active .plus-icon::before{
+  background-color: #feb236;
+}
+
+#newPost {
+  background-color: #ff7b25;
+  border-radius: 35px;
+  padding: 30px;
+}
+.input{
+  margin: 10px 0px;
+/*  display: block;
+  width: auto;*/
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  border-radius: 10px;
+  border-width: 0px;
+  font-family: 'Malgun Gothic';
+  font-size: 20px;
+}
+
+.bigBtn {
+    background-color: #feb236;
+    color: #d64161;
+    width: var(--width);
+    height: var(--height);
+    position: relative;
+    border-radius: var(--border-radius);
+    border-color: #d64161;
+    border-width: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    margin: 0px;
+    padding: 0px;
+}
+.newListBtn::after{
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 37px;
+  top: calc(50% - 3px);
+  background-color: #d64161;
+  right: 18px;
+  overflow: hidden;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+
+}
+
+.plus-icon::before {
+  content: "";
+  position: absolute;
+  height: 37px;
+  width: 6px;
+  top: calc(50% - 18px);
+  background-color: #d64161;
+  overflow: hidden;
+  left: 35px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+
+ul, ol, li {
+  list-style: none;
+}
+.buttons{
+  text-align: justify;
+  padding: 0px;
+  margin: 20px 0px 0px 0px;
+  height: 50px;
+}
+.buttons:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 0;
+}
+.buttonsDiv {
+  width: 48%;
+  height: 0px;
+  display: inline-block;
+}
+
+#return{
+  font-size: 22px;
+  height: 50px;
+  width: 90px;
+}
+#psubmit {
+  font-size: 22px;
+  height: 50px;
+  width: 120px;
+}
+
+#flagNum{
+  height: 20px;
+}
+#flagNum::after{
+  content: 'Apenas números aceitos';
+  color: red;
+  font-size: 20px;
+  position: relative;
+  top: -15px;
+
+}
+#flagPrice{
+  height: 20px;
+}
+#flagPrice::after{
+  content: 'Apenas números aceitos';
+  color: red;
+  font-size: 20px;
+  position: relative;
+  top: -15px;
+
+}

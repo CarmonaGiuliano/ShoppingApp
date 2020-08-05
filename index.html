@@ -1,0 +1,45 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="//db.onlinewebfonts.com/c/3a025ae92e6446cec24efcb6d29e5bf3?family=Malgun+Gothic" rel="stylesheet" type="text/css"/>
+    <title>Shopping App</title>
+  </head>
+  <body>
+    <h2>Criar nova lista</h2>
+
+    <button id="newListBtn" class="bigBtn"  onclick="newListClick()"><div class="plus-icon newListBtn"></div></button>
+    <div id="newPost" style="display:none">
+      <form id="productForm" name="productForm">
+        <label for="pname">Nome do Produto:</label><br>
+        <input type="text" class="input" id="pname" name="pname" required><br>
+        <label for="ptype">Tipo de Produto:</label><br>
+        <select class="input" id="ptype" name="ptype" required>
+          <option value="house">Casa e Jardim</option>
+          <option value="electronics">Eletrônicos</option>
+          <option value="jewelry">Joias e Relógios</option>
+          <option value="computers">Computadores e redes</option>
+          <option value="smartphones">Telefonia e Acessórios</option>
+          <option value="sports">Esporte e Lazer</option>
+          <option value="toys">Brinquedos</option>
+          <option value="mothers">Mamãe e Bebê</option>
+          <option value="automobile">Auto e Moto</option>
+          <option value="health">Saúde e Beleza</option>
+          <option value="fashion">Moda Feminina</option>
+          <option value="accessories">Acessórios</option>
+        </select><br>
+        <label for="pamount">Quantidade ofertada:</label><br>
+        <input type="text" class="input" id="pamount" name="pamount" required><br>
+        <div id="flagNum" style="display: none"></div>
+        <label for="pprice">Valor por unidade:</label><br>
+        <input type="text" class="input" id="pprice" name="pprice" pattern="^\$\d{1,3}(.\d{3})*(\,\d+)?$" value="" data-type="currency" placeholder="R$00,00" required><br><div id="flagPrice" style="display: none"></div>
+        <ul class="buttons">
+          <li class="buttonsDiv"><button id="return" class="bigBtn" onclick="newListClick()">Voltar</button></li>
+          <li class="buttonsDiv"><input type="Submit" class="bigBtn" id="psubmit"  value="Criar lista" onclick="validateForm()"></li>
+
+        </ul>
+      </form>
+
+  </div>
+  </body>
+</html>
